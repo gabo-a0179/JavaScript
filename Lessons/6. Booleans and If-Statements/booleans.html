@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Booleans</title>
+  </head>
+  <body>
+    <script>
+      true
+      false
+
+      console.log(3 > 5)
+
+      // Comparison Operators
+      /*
+      > Greater than
+      < Less than
+      >= Greater than or equal to
+      <= Less than or equal to
+      === Equal to
+      == Equal to (converts to the same type)
+      !== Not equal to
+      */
+
+      console.log(5 == '5.00');
+
+      if (true) {
+        console.log('hello');
+      } else {
+        console.log('else');
+      }
+
+      const age = 15;
+
+      if (age >= 16) 
+        console.log('You can drive');
+      else if (age >= 14) {
+        console.log('Almost there!');
+      }
+      else {
+        console.log('You can not drive');
+      }
+
+      // Logical operator
+      console.log(true && true); // and
+      console.log(true || false); // or
+      console.log(!true); // not
+
+      // Truthy and Falsy Values
+      if (5) {
+        console.log('truthy');
+      }
+      if (0) {
+        console.log('falsy');
+      }
+      /*
+      Falsy values:
+      - false
+      - 0
+      - ''
+      - NaN
+      - undefined
+      - null
+      Everything else is truthy
+      */
+
+      // Ternary Operator ?
+      const ternary = true ? 'truthy' : 'falsy' // if else
+
+      // Guard Operator &&
+      false && console.log('hello'); // Console is not executed
+
+      // Default Operator
+      const currency = 'EUR' || 'USD';
+    </script>
+  </body>
+</html>
