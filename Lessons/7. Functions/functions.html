@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Functions</title>
+  </head>
+  <body>
+    <script>
+      function function1() {
+        console.log('hello');
+        console.log(2+2);
+      }
+
+      function1();
+      /*
+      Rule for function names:
+      1. Can´t use especial words
+      2. Can´t start with a number
+      3. Can´t use special characters except: $, _
+      */
+
+      function calculateTax(cost, taxPercent = 0.1) {
+        console.log(cost * taxPercent);
+      }
+      calculateTax(2000, 0.2);
+      calculateTax(5000);
+      /*
+      Rule for parameters names:
+      1. Can´t use especial words
+      2. Can´t start with a number
+      3. Can´t use special characters except: $, _
+      */
+    </script>
+  </body>
+</html>
